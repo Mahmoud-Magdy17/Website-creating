@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.page{
+    display: grid;
+    grid-template-rows: 1.2fr 1fr 2fr 1fr;
+}
+.page ._1st{
+    padding-top:20px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 100%;
+}
+.page header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.page ._1st .social{
+    /* position: absolute; */
+    /* left:1400px; */
+    margin-left:1000px;
+}
+.page ._1st .social img{
+    width: 45px;
+    height: 45px;
+}
+.page ._1st .content h2{
+    width: 45%;
+
+}
+.page ._1st .text  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page ._1st .content .text a{
+    width: 150px;
+    height: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    margin: 30px;
+    border-radius: 30px;
+}
+.page ._1st .content .text .buttons .a2{
+    background-color:rgb(173, 168, 168);
+
+}
+.page ._1st .content .text .buttons{
+    display: flex;
+    flex-direction: row;
+}
+.page ._1st .content .text h2{
+    width:50%;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+}
+.page ._1st .content {
+    display: flex;
+}
+.page ._1st .content .image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page ._1st .content img{
+    width: 300px;
+    height: 300px;
+}
+/* ............... _2nd ............ */
+._2nd{
+    background-color: rgb(173, 168, 168);
+width: 98%;
+position: relative;
+left: 1%;
+margin-top: 30px;
+margin-bottom: 30px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+._2nd img{
+    width: 550px;
+    height:400px;
+    position: relative;
+}
+._2nd .photo{
+    position: relative;
+}
+._2nd .photo::before{
+    position: absolute;
+    z-index: 0;
+    content: "";
+    width: 100px;
+    height:470px;
+    transform: translate(150%, -7%);
+    background-color: rgb(2, 90, 2);
+}
+._2nd .photo::after{
+    content: "";
+    position: absolute;
+    z-index: 50;
+    background-color: rgb(33, 206, 33);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-25%,-25%);
+    
+    left: 0;
+}
+/* ............... _3rd .................... */
+._3rd{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: red; */
+    grid-column-start:1 ;
+    grid-column-end: 5;
+}
+._3rd .text h3{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color:green ;
+}
+._3rd .text p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.cards{
+    width: 100%;
+    margin-top: 30px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.card{
+    width:30%;
+    height: 340px;
+    background-color: rgb(173, 168, 168);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card p{
+    text-align: center;
+    font-size: 10px;
+}
+.card H4{
+    margin: 15px;
+    font-size: 14px;
+}
+.card .H4_1{
+    color: green;
+    font-size: 17px;
+    margin-top: 60px;
+}
+.card img{
+    position: relative;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    transform: translateY(-30%);
+    border: 3px white solid;
+}
+._3rd .content img{
+    width: 500px;
+    height: 450px;
+    margin-top: 40px;
+    z-index: 1000;
+    transform: translate(-10%,0px);
+}   
+._3rd .content {
+    display: flex;
+    
+}
+
+._3rd .content div{
+    color: green;
+    font-size:60px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background-color: rgb(173, 168, 168);
+    width: 500px;
+    height: 450px;
+    margin-top: 40px;
+    transform: translate(-10%,0px);
+    margin-left: 5px;
+}
+._3rd .content div p{
+    transform: translate(0%,-30%);
+}
+._3rd .content div a{
+    background-color: green;
+    display: inline-block;
+    color: white;
+    width: 70%;
+    /* height: 50px; */
+    transform: translate(-6.5%,40%);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 44px;
+}
+
+._3rd .content div::after{
+    content: "";
+    background-color:rgb(2, 90, 2);
+    width: 520px;
+    height: 100px;
+    z-index:-1000;
+    right:500px;
+    top: 300px;
+    position: absolute;
+}
+/* ................ _4th ............... */
+._4th{
+    width: 98%;
+    background-color:  rgb(173, 168, 168);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: 1%;
+}
+._4th h3{
+    color: green;
+    font-size: 60px;
+    transform: translate(0,-10%);
+}
+.name-email{
+    height: 30px;
+}
+form div{
+background-color: blueviolet;
+    height:100%;
+    width: 100%;
+}
+form div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:800px;
+    padding-top: 15px;
+    border-radius: 1px;
+
+}
+.input_space{
+    margin: 5px;
+    width: 700px;
+    font-size: 20px;
+}
+
+.sub{
+    background-color: green;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+.sub a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: translate(0,-8px);
+}
+input , textarea{
+    background-color:  rgb(173, 168, 168);
+    border: none;
+
+}
